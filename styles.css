@@ -1,0 +1,93 @@
+html{
+    scroll-behavior:smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url( 'images/quiz.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: repeat;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: rgb(104, 71, 9);
+    font-family: fantasy;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid color-mix(in srgb-linear, rgb(98, 76, 80)  60%, rgb(155, 237, 155) 10%);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #863b3b;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #661010;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #863b3b;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:#661010;
+}
+
+.hide {
+    display: none;
+}
+.answers {
+    display : flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.option-btn {
+    flex:1;
+    min-width: 150px;
+    margin-bottom: 0;
+}
+h1 {
+    color: darkslategrey;
+    font-family:cursive;
+}
+h2{
+    color: darkslategrey;
+    font-family:cursive;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+       <B> <h1>Online Quiz Maker</h1></B>
+        <div id="admin-section">
+            <h2>Prepare quiz questions and answers, then take the test.</h2>
+            <form id="quiz-form">
+                <div id="question-container">
+                    <div class="question-block">
+                        <label for="question">Question 1:</label>
+                        <input type="text" class="question" placeholder="Enter your question">
+                        <label for="answers">Options:</label>
+                        <input type="text" class="answer" placeholder="Option 1">
+                        <input type="text" class="answer" placeholder="Option 2">
+                        <input type="text" class="answer" placeholder="Option 3">
+                        <input type="text" class="answer" placeholder="Option 4">
+                        <label for="correct-answer">Correct Answer [Select 1-4]:</label>
+                        <input type="number" class="correct-answer" min="1" max="4">
+                    </div>
+                </div>
+                <button type="button" id="add-question-btn">Add Question</button>
+                <button type="submit" id="create-quiz-btn">Create Quiz</button>
+            </form>
+        </div>
+
+        <div id="quiz-section" class="hide">
+            <h2>Take the Quiz</h2>
+            <div id="quiz-container">
+                <div id="question"></div>
+                <div id="answers"></div>
+                <button id="next-btn" class="btn hide">Next</button>
+                <button id="submit-btn" class="btn hide">Submit Quiz</button>
+            </div>
+        </div>
+        
+        <div id="result-section" class="hide">
+            <h2>Quiz Result</h2>
+            <p>Your score: <span id="score"></span></p>
+            <button id="restart-btn" class="btn">Restart</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
